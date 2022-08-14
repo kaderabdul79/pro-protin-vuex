@@ -11,6 +11,7 @@
                </li>
             </ul>
             <ul class="social_icon">
+               <li><a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true">12</i></a></li>
                <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                <li><a href="javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
