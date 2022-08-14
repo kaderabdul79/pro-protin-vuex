@@ -1,5 +1,5 @@
 <template>
-  <Loader />
+  <!-- <Loader /> -->
   <SiteNav />
   <Header />
   <Protien />

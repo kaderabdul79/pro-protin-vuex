@@ -12,10 +12,12 @@
             <div class="row">
                <div class="col-md-3 col-sm-6" v-for="protien in protiens" :key="protien.id">
                   <div class="protien">
-                     <figure><img :src="protien.img" alt="#"/></figure>
-                     <h3>{{protien.price}}</h3>
-                     <span> {{protien.name}} </span>
-                     <a class="read_more mar_top" href="Javascript:void(0)"> Buy Now</a>
+                     <router-link :to="{name: 'Details',params:{id: protien.id}}">
+                        <figure><img :src="protien.img" alt="#"/></figure>
+                        <h3>$ {{protien.price}}</h3>
+                        <span> {{protien.name}} </span>
+                     </router-link>
+                     <button v-on:click="addToCart(protien.id)" class="read_more mar_top">Buy Now</button>
                   </div>
                </div>
             </div>
@@ -34,6 +36,11 @@ export default {
             {id:3,name:"Pedicure",img:"images/pro3.png",price:4700},
             {id:4,name:"Variations",img:"images/pro4.png",price:900},
          ]
+      }
+   },
+   methods:{
+      addToCart(protine){
+         console.log(protine);
       }
    }
 }
